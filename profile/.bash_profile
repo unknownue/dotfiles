@@ -16,3 +16,4 @@ alias ls='exa'
 alias view='viu'
 alias python="/usr/local/bin/python3"
 alias python2="/usr/bin/python2.7"
+alias cat="bat"
