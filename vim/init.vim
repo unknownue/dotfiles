@@ -7,14 +7,15 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " GUI enhancements ###
 
-Plug 'chriskempson/base16-vim' " Base16 colorscheme for Vim.
-Plug 'joshdick/onedark.vim'    " OneDark colorscheme for Vim.
-Plug 'ap/vim-buftabline'       " A well-integrated, low-configuration buffer list that lives in the tabline.
-Plug 'itchyny/vim-gitbranch'   " Provides the branch name of the current git repository.
+Plug 'chriskempson/base16-vim'   " Base16 colorscheme for Vim.
+Plug 'joshdick/onedark.vim'      " OneDark colorscheme for Vim.
+Plug 'ap/vim-buftabline'         " A well-integrated, low-configuration buffer list that lives in the tabline.
+Plug 'itchyny/vim-gitbranch'     " Provides the branch name of the current git repository.
+Plug 'scrooloose/nerdcommenter'  " Comment functions
+Plug 'itchyny/lightline.vim'     " A light and configurable statusline/tabline plugin for Vim.
+Plug 'scrooloose/nerdtree'       " A tree explorer plugin for vim.
+" Plug 'majutsushi/tagbar'         " Vim plugin that displays tags in a window, ordered by scope.
 
-Plug 'itchyny/lightline.vim'   " A light and configurable statusline/tabline plugin for Vim.
-Plug 'scrooloose/nerdtree'     " A tree explorer plugin for vim.
-Plug 'majutsushi/tagbar'       " Vim plugin that displays tags in a window, ordered by scope.
 
 " Semantic language support
 Plug 'w0rp/ale/'                " Language Server Protocol (LSP) integration in Vim.
@@ -66,6 +67,12 @@ set number  " Show the line number
 " Turn on Syntax highlight
 syntax on
 syntax enable
+
+" Define <leader> mapping
+let mapleader='\'
+
+" Comment function need filetype plugin on
+filetype plugin on
 
 " Font
 set guifont=Courier\ new:h20
@@ -154,6 +161,21 @@ let g:syntastic_check_on_wq = 0
 "   "           \ 'on_complete': ['ncm2#on_complete#omni', 'vimtex#complete#omnifunc'],
 "   "           \ })
 " augroup END
+
+
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+" let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+" let g:NERDDefaultAlign = 'left'
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
 
 
 " 关闭NERDTree快捷键
@@ -250,13 +272,15 @@ nnoremap <Leader>] :YcmCompleter GoTo<CR>
 
 " Keymaps for Buftabline Plugin
 set hidden
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
+nnoremap <c-n> :bnext<CR>
+nnoremap <c-p> :bprev<CR>
+
+" Keymaps for Commment Commend
+" nnoremap <D-<kDivide>> [count]<leader>c<space>
 
 " ----------------------------------------------------------------------------------
 " Keyborad Mapping End
 " ##################################################################################
-
 
 
 
@@ -283,3 +307,4 @@ if (empty($TMUX))
   endif
 endif
 " ##################################################################################
+
