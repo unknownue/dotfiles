@@ -1,4 +1,7 @@
 
+export LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
 export VULKAN_ROOT_LOCATION="/Users/usami/Development/Vulkan/SDK"
 export VULKAN_SDK="$VULKAN_ROOT_LOCATION/macOS"
 export VK_ICD_FILENAMES="$VULKAN_SDK/etc/vulkan/icd.d/MoltenVK_icd.json"
