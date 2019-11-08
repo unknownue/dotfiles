@@ -1,0 +1,46 @@
+ALACRITTY_LOG=/var/folders/yc/gvdx9_y12rd3s63z2_dw16n00000gn/T/Alacritty-75660.log
+BASH=/bin/bash
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="bashrc.sh")
+BASH_VERSINFO=([0]="3" [1]="2" [2]="57" [3]="1" [4]="release" [5]="x86_64-apple-darwin19")
+BASH_VERSION='3.2.57(1)-release'
+COLORTERM=truecolor
+DIRSTACK=()
+EUID=501
+GROUPS=()
+HOME=/Users/usami
+HOSTNAME=Usamis-MBP.lan
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=
+LC_ALL=en_US.UTF-8
+LC_CTYPE=en_US.UTF-8
+LOGNAME=usami
+MACHTYPE=x86_64-apple-darwin19
+OPTERR=1
+OPTIND=1
+OSTYPE=darwin19
+PATH=/usr/local/opt/gettext/bin:/usr/local/opt/openssl/bin:/Users/usami/.cargo/bin:/Users/usami/Development/Vulkan/SDK/macOS/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin
+PPID=75661
+PS4='+ '
+PWD=/Users/usami/Desktop
+RUST_SRC_PATH='~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
+SHELL=/usr/local/bin/fish
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=2
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.GErY5Jh6zG/Listeners
+TERM=xterm-256color
+TMPDIR=/var/folders/yc/gvdx9_y12rd3s63z2_dw16n00000gn/T/
+UID=501
+USER=usami
+VK_ICD_FILENAMES=/Users/usami/Development/Vulkan/SDK/macOS/etc/vulkan/icd.d/MoltenVK_icd.json
+VK_LAYER_PATH=/Users/usami/Development/Vulkan/SDK/macOS/etc/vulkan/explicit_layer.d
+VULKAN_ROOT_LOCATION=/Users/usami/Development/Vulkan/SDK
+VULKAN_SDK=/Users/usami/Development/Vulkan/SDK/macOS
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=io.alacritty.1484
+_=bash
+__CF_USER_TEXT_ENCODING=0x1F5:0:0
+export PATH=/usr/local/opt/gettext/bin:/usr/local/opt/openssl/bin:/Users/usami/.cargo/bin:/Users/usami/Development/Vulkan/SDK/macOS/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin
