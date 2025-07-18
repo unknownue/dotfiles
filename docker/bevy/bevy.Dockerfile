@@ -50,7 +50,7 @@ RUN python3 -m pip install --user --no-cache-dir pqi && \
 	sudo mkdir -p /home/unknownue/.config/pip && \
 	sudo chmod a+rw /home/unknownue/.config/pip && \
     pqi use aliyun && \
-    python3 -m pip install --user --no-cache-dir pyautogen autogenstudio vllm
+    python3 -m pip install --user --no-cache-dir ag2 autogenstudio vllm
 
 # Install Vulkan SDK
 WORKDIR /opt
